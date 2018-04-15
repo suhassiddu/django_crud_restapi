@@ -25,8 +25,8 @@ class TestCreateCrudItem(APITestCase):
   def test_item_was_created(self):
     self.assertEqual(CrudItem.objects.count(), 1)
 
-  def test_item_has_correct_title(self):
-    self.assertEqual(CrudItem.objects.get().title, 'Walk the dog')
+  def test_item_has_correct_text(self):
+    self.assertEqual(CrudItem.objects.get().text, 'Walk the dog')
 
 class TestUpdateCrudItem(APITestCase):
   """
